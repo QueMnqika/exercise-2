@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise 2</title>
+    <title>Exercise 2&3</title>
     <style>
         *{
             font-family:  Arial, Helvetica, sans-serif, verdana, sans-serif;
@@ -14,18 +14,46 @@
             letter-spacing: 2px;
             line-height: 25px;
         }
-        h1{
+        h1, h5{
             text-align: center;
         }
 
         .table{
-            margin-top: 2%;
+            margin-top: 5%;
             margin-left: 25%;
             width: 50%;
+            margin-bottom: 5%;
         }
         
         .table, td{
             border: 1px solid #000;
+        }
+
+        td{
+            padding: 8px;
+        }
+
+        .container-img{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 7%;
+        }
+
+        .cards{
+            box-shadow: 0 0 5px #3b3b3b;
+            border-radius: 25px;
+            background-color: #f4f4f4;
+        }
+
+        .cards img{
+            border-bottom: 1px solid #000;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+        }
+
+        input{
+            padding: 5px;
+            margin: 5px;
         }
     </style>
 </head>
@@ -54,5 +82,46 @@
             <td><a href="https://www.freecodecamp.org/news/learn-these-javascript-fundamentals-and-become-a-better-developer-2a031a0dc9cf/">https://www.freecodecamp.org/news/learn-these-javascript-fundamentals-and-become-a-better-developer-2a031a0dc9cf/</a></td>
         </tr>
     </table>
+    <hr>
+    <hr>
+    <hr>
+    <h1 style="margin: 15px;">Exercise 3: Image</h1>
+    <div class="container-img">
+        <div class="cards">
+            <img src="https://i.postimg.cc/8zzjW2bz/360-F-587837228-3q-Zie-JMu-Ht-A9-Jkq-ID5z-GXm-KYv-AT32q-Mj.jpg" alt="Not giving up" width="200px">
+            <h5>Resilient</h5>
+        </div>
+        <div class="cards">
+            <img src="https://i.ibb.co/hXcQJTs/helping-hand.jpg" alt="Helpful" width="235px">
+            <h5>HELPFUL</h5>
+        </div>
+        <div class="cards">
+            <img src="https://i.ibb.co/m40x3wx/reading.jpg" alt="Likes to read" width="223px">
+            <h5>Book Worm</h5>
+        </div>
+        <div class="cards">
+            <a href="https://lifechoices.co.za/"><img src="https://i.postimg.cc/YqB7XTdG/202106-lifechoiceslogo1.png" alt="LifeChoces" width="230px" height="150px"></a>
+            <h5>My Home</h5>
+        </div>
+    </div>
+    <hr>
+    <hr>
+    <hr>
+   <form action="https://formspree.io/f/xvojdzgo" method="POST">
+    <label>Name:</label>
+    <br>
+    <input type="text" name="name" id="name" placeholder="Enter your First Name">
+    <br>
+    <label>Last Name:</label>
+    <br>
+    <input type="text" name="surname" id="last-name" placeholder="Enter you rLast Name">
+    <br>
+    <label>Email Address:</label>
+    <br>
+    <input type="text" name="email" id="email" placeholder="Enter your Email">
+    <br>
+    <button type="submit">Contact me!</button>
+   </form>
+
 </body>
 </html>
